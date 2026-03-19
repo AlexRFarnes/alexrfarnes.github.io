@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Alex R. Farnes</title>
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Switch to dark mode">
+          <span
+            class="theme-toggle__icon theme-toggle__icon--sun"
+            aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+            </svg>
+          </span>
+          <span
+            class="theme-toggle__icon theme-toggle__icon--moon"
+            aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="wrap main">
+      <section
+        id="about"
+        class="section section--about"
+        aria-labelledby="about-heading">
+        <h1 class="visually-hidden">Saul Alexander Reynoso Farnes</h1>
+
+        <div class="about-photo-panel">
+          <div
+            class="about-avatar"
+            role="img"
+            aria-label="Profile photo placeholder — add your photo by replacing this block or setting a background image">
+            <span class="about-avatar__checker" aria-hidden="true"></span>
+            <svg
+              class="about-avatar__silhouette"
+              viewBox="0 0 96 96"
+              width="96"
+              height="96"
+              aria-hidden="true">
+              <circle cx="48" cy="34" r="18" fill="currentColor" />
+              <path
+                fill="currentColor"
+                d="M24 88c0-18 10.5-28 24-28s24 10 24 28v4H24v-4z" />
+            </svg>
+          </div>
+
+          <p class="hero-tagline">Software developer</p>
+          <p class="lede">
+            Short professional summary—replace this with a concise overview of
+            your focus, stack, and what you are looking for next.
+          </p>
+          <ul class="contact-list contact-list--social">
+            <li>
+              <a href="https://github.com/alexrfarnes" rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexrfarnes"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-info-panel cv-panel">
+          <h2 id="about-heading" class="cv-panel__title">
+            Personal information
+          </h2>
+          <div class="about-kpi-grid">
+            <div class="about-kpi">
+              <span class="about-kpi__label">Name</span>
+              <p class="about-kpi__value">Saul Alexander Reynoso Farnes</p>
+            </div>
+            <div class="about-kpi">
+              <span class="about-kpi__label">Email</span>
+              <p class="about-kpi__value">
+                <a href="mailto:you@example.com">alexrfarnes@gmail.com</a>
+              </p>
+            </div>
+            <div class="about-kpi">
+              <span class="about-kpi__label">Phone</span>
+              <p class="about-kpi__value">
+                <a href="tel:+11234567890">(123) 456-7890</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="section section--stacked"
+        aria-labelledby="experience-heading">
+        <div class="cv-panel">
+          <h2 id="experience-heading" class="cv-panel__title">
+            Work experience
+          </h2>
+
+          <article class="entry cv-card">
+            <div class="entry__header">
+              <h3 class="entry__title">Senior Engineer</h3>
+              <p class="entry__meta">Example Corp · 2022 — Present</p>
+            </div>
+            <ul class="entry__list">
+              <li>
+                Led delivery of a customer-facing product area; replace with
+                your impact.
+              </li>
+              <li>Improved reliability or performance; quantify if you can.</li>
+              <li>Mentored peers or shaped technical direction.</li>
+            </ul>
+          </article>
+
+          <article class="entry cv-card">
+            <div class="entry__header">
+              <h3 class="entry__title">Software Engineer</h3>
+              <p class="entry__meta">Another Company · 2019 — 2022</p>
+            </div>
+            <ul class="entry__list">
+              <li>
+                Built and maintained services or features relevant to the role.
+              </li>
+              <li>Collaborated across design, product, and infrastructure.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="education"
+        class="section section--stacked"
+        aria-labelledby="education-heading">
+        <div class="cv-panel">
+          <h2 id="education-heading" class="cv-panel__title">Education</h2>
+
+          <article class="entry entry--compact cv-card">
+            <div class="entry__header">
+              <h3 class="entry__title">B.Sc. Computer Science</h3>
+              <p class="entry__meta">Example University · 2015 — 2019</p>
+            </div>
+            <p class="entry__note">
+              Optional: honors, relevant coursework, or thesis title.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
